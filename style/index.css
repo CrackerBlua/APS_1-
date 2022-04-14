@@ -68,13 +68,13 @@ nav {
 
 nav div {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 60px;
     position: absolute;
     top: 0;
     left: 2%;
-    visibility: hidden;
 }
+
 .visible-title {
     visibility: visible;
 }
@@ -94,11 +94,32 @@ nav ul li {
 nav ul li a {
     text-decoration: none; 
     color: rgb(255, 255, 255);
+    cursor: pointer !important;
 }
 
 nav ul li a:hover {
     text-decoration: underline; 
-    color: #69B587 ;
+    color: rgba(5, 27, 155, 0.8) ;
+    cursor: pointer;
+}
+
+div#divNavigator {
+    font-size: 40px;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.display-burguer-menu {
+    display: none;
+}
+
+div#divNavigator {
+    font-size: 40px;
+    margin-top: 5px;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 ul.nav-list > li {
@@ -111,12 +132,166 @@ div.content {
     margin-left: 2%;
 }
 
-@media only screen and (max-width: 600px) {
+div.display-loading-div {
+    display: none;
+}
+
+/* códigos para dar um overlay sobre a tela */
+div#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(18, 18, 18, 0.8);
+    z-index: 15; /* para se sobrepor ao menu */
+} 
+  
+.circle-border {
+    width: 150px;
+    height: 150px;
+    padding: 4px;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top:40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(9, 114, 7);
+    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgb(12, 134, 10) 100%);
+    animation: spin 5s linear 0s infinite;
+}
+  
+.circle-core {
+    width: 100%;
+    height: 100%;
+    background: url('/images/planeta_grande_sem_fundo.png'); /*rgba(159, 198, 158, 0.9)*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+  
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+}
+  
+div#loader p {
+      position: fixed;
+      left: 50%;
+      top:55%;
+      color: rgb(122, 162, 209);
+      font-size: 1.5em;
+      font-family: consolas;
+      letter-spacing: 0.15em;
+}
+
+@media only screen and (max-width: 650px) {
     nav ul li { 
         display: inline-block; 
         line-height: 60px;
         margin-left: 25px;
     }
+
+    .circle-border {
+        width: 150px;
+        height: 150px;
+        padding: 3px;
+        display: flex;
+        position: fixed;
+        left: 25%;
+        top:45%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgb(9, 114, 7);
+        background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(9, 114, 7) 100%);
+        animation: spin 5s linear 0s infinite;
+    }
+
+    div#loader p {
+        position: fixed;
+        left: 42%;
+        top:57%;
+        color: rgb(20, 44, 72);
+        font-size: 1.5em;
+        font-family: consolas;
+        letter-spacing: 0.15em;
+  }
+}
+
+@media only screen and (max-width: 500) {
+    nav ul li { 
+        display: inline-block; 
+        line-height: 60px;
+        margin-left: 25px;
+    }
+
+    .circle-border {
+        width: 150px;
+        height: 150px;
+        padding: 3px;
+        display: flex;
+        position: fixed;
+        left: 10%;
+        top:45%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgb(9, 114, 7);
+        background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(9, 114, 7) 100%);
+        animation: spin 5s linear 0s infinite;
+    }
+
+    div#loader p {
+        position: fixed;
+        left: 42%;
+        top:57%;
+        color: rgb(116, 169, 226);
+        font-size: 1.5em;
+        font-family: consolas;
+        letter-spacing: 0.15em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+    .circle-border {
+        width: 150px;
+        height: 150px;
+        padding: 3px;
+        display: flex;
+        position: fixed;
+        left: 40%;
+        top:38%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgb(9, 114, 7);
+        background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(9, 114, 7) 100%);
+        animation: spin 5s linear 0s infinite;
+    }
+
+    div#loader p {
+        position: fixed;
+        left: 42%;
+        top:55%;
+        color: rgb(116, 169, 226);
+        font-size: 1.5em;
+        font-family: consolas;
+        letter-spacing: 0.15em;
+  }
+}
+
+div#divNavigator {
+
 }
 
 /* @media only screen and (max-width: 960px) {
