@@ -32,13 +32,27 @@ window.onresize = setNavigationIcons;
 function setNavigationIcons() {
     const earth = document.getElementById('earth');
     const burguer = document.getElementById('burguer');
+    const pagesList = [
+        {id: 'indexPage', name: 'Inicio'},
+        {id: 'arquivePage', name: 'Arquive'},
+        {id: 'donationPage', name: 'Doação'},
+        {id: 'aboutPage', name: 'Sobre Nós'}
+    ]
 
     console.log(getDeviceType());
 
     if(getDeviceType() == 'mobile' ) {
-        console.log('cheguei aqui');
+        console.log('cheguei aqui');    
         earth.setAttribute('class', 'display-hide');
         burguer.removeAttribute('class', 'display-hide')
+        
+        pagesList.filter((elmnt) => {
+            return elmnt.id != 'indexPage';
+        }).forEach((elmnt) => {
+            document.getElementById(elmnt.id).setAttribute('class', 'display-hide');
+            document.getElementById(elmnt.id).parentElement.setAttribute('class', 'display-hide');
+        })
+
     } else if(getDeviceType() === 'desktop') {
         earth.removeAttribute('class', 'display-hide');
         burguer.setAttribute('class', 'display-hide');
