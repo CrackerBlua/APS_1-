@@ -10,6 +10,43 @@ document.addEventListener('scroll', function() {
     }
 });
 
+const getDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      return "tablet";
+    }
+    if (
+      /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+        ua
+      )
+    ) {
+      return "mobile";
+    }
+    return "desktop";
+};  
+
+window.onload = setNavigationIcons;
+
+window.onresize = setNavigationIcons;
+
+function setNavigationIcons() {
+    const earth = document.getElementById('earth');
+    const burguer = document.getElementById('burguer');
+
+    console.log(getDeviceType());
+
+    if(getDeviceType() == 'mobile' ) {
+        console.log('cheguei aqui');
+        earth.setAttribute('class', 'display-hide');
+        burguer.removeAttribute('class', 'display-hide')
+    } else if(getDeviceType() === 'desktop') {
+        earth.removeAttribute('class', 'display-hide');
+        burguer.setAttribute('class', 'display-hide');
+    }
+}
+
+
+
 function changePage(event) {
     let pageReference = event.target.id;
     let divLoader = document.getElementById('loader');
@@ -32,7 +69,3 @@ function changePage(event) {
     }
 }
 
-async function setTimer(mili) {
-    setTimeout(() => {console.log('Passando aqui')}, mili)
-}
-// divLoader.setAttribute('class', 'display-loading-div');

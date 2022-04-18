@@ -103,6 +103,14 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+ion-icon {
+    visibility: visible;
+}
+
+ion-icon#burguer {
+    margin-right: 10px;
+}
+
 div#divNavigator {
     font-size: 40px;
     margin-top: 5px;
@@ -110,14 +118,13 @@ div#divNavigator {
     align-items: center;
 }
 
-div.display-burguer-menu {
-    display: none;
-}
 
-div#divNavigator {
-    font-size: 40px;
-    margin-top: 5px;
-    
+div#burguerMenu {
+    font-size: 60px;
+    margin-top: 0px;
+    position: absolute;
+    float:left;
+    padding-right: 5px;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +139,11 @@ div.content {
     margin-left: 2%;
 }
 
-div.display-loading-div {
+.display-loading-div {
+    display: none;
+}
+
+.display-hide {
     display: none;
 }
 
@@ -198,7 +209,7 @@ div#loader p {
     nav ul li { 
         display: inline-block; 
         line-height: 60px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
 
     .circle-border {
