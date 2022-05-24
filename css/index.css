@@ -62,85 +62,83 @@ div.fixed-header > ion-icon {
     margin-left: 22px;
 }
 
-nav {
-    width: 100%;
-    height: 60px;
-    background: rgb(9, 114, 7);
-    position: relative;
-    z-index: 10;
+.row {
+    padding: 1%;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
 }
 
-nav div {
-    color: white;
+.navbar-light .navbar-brand {
+    color: #fff !important;
+    font-size: 1.50rem;
+    margin-left: 1.25rem;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+    border-color: rgba(229, 223, 223, 0.1) !important;
+    color: #fff !important;
+}
+
+nav div#conteudoNavbarSuportado > ul > li {
+    padding-left: 1.5rem;
+}
+
+nav div#conteudoNavbarSuportado > ul > li > a {
+    color: white !important;
     font-size: 1.5rem;
-    line-height: 60px;
-    position: absolute;
-    top: 0;
-    left: 2%;
+}
+
+ul > li > a:hover {
+    text-decoration: underline; 
+    color: rgba(5, 27, 155, 0.8);
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .visible-title {
     visibility: visible;
 }
 
-nav ul { 
-    list-style-type: none;
-    margin: 0 0 auto 0;
-    padding-left: 0;
+.spaceBetweenSections {
+    margin-top: 1rem;
+}
+
+p.textCenter {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.container-fluid {
+    padding: 1%;
+}
+
+div.aboutUs > h2 {
     text-align: center;
-    max-width: 100%;
-}
-nav ul li { 
-    display: inline-block; 
-    line-height: 60px;
-    margin-left: 50px;
-}
-nav ul li a {
-    text-decoration: none; 
-    color: rgb(255, 255, 255);
-    cursor: pointer !important;
+    margin-top: 1rem;
 }
 
-nav ul li a:hover {
-    text-decoration: underline; 
-    color: rgba(5, 27, 155, 0.8) ;
-    cursor: pointer;
+.carousel-item{
+    min-height: 280px !important;
 }
 
-ion-icon {
-    visibility: visible;
+.imageOpc {
+    opacity: 0.7;
 }
 
-ion-icon#burguer {
-    margin-right: 10px;
+div.aboutUsImg > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-div#divNavigator {
-    font-size: 40px;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
+div.aboutUs > p {
+    text-indent: 1.5em;
 }
 
-
-div#burguerMenu {
-    font-size: 60px;
-    margin-top: 0px;
-    position: absolute;
-    float:left;
-    padding-right: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-ul.nav-list > li {
-    font-size: 20px;
-}
-
-div.content {
-    width: 50%;
-    background-color: black;
-    margin-left: 2%;
+div.sideBorderGray {
+    border-right: 1px solid rgb(215, 207, 207);
 }
 
 .display-loading-div {
@@ -210,11 +208,6 @@ div#loader p {
 }
 
 @media only screen and (max-width: 650px) {
-    nav ul li { 
-        display: inline-block; 
-        line-height: 60px;
-        /* margin-left: 25px; */
-    }
 
     .circle-border {
         width: 150px;
@@ -244,11 +237,6 @@ div#loader p {
 }
 
 @media only screen and (max-width: 500) {
-    nav ul li { 
-        display: inline-block; 
-        line-height: 60px;
-        margin-left: 25px;
-    }
 
     .circle-border {
         width: 150px;
@@ -305,9 +293,6 @@ div#loader p {
   }
 }
 
-div#divNavigator {
-
-}
 
 /* @media only screen and (max-width: 960px) {
     .content{ 
