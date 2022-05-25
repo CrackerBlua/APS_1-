@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WarmGreen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="Daniel Cristofani/">
+        <link rel="stylesheet" type="text/css" href="../css/sobre.css" media="screen" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+        <script src="../js/sobre.js"></script>
+    </head>
+    <body>
+        <div id="loader" class="spinner-box display-loading-div">
+            <div class="circle-border">
+                <div class="circle-core"></div>
+            </div>
+            <!-- <p> Carregando... <p/> -->
+        </div>
+        <header>
+            <div class="header-banner"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(9, 114, 7) !important">
+                <a class="navbar-brand" href="#">WarmGreen</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a id="indexPage" class="nav-link" onclick="changePage(event)">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="aboutPage" class="nav-link" onclick="changePage(event)" style="color: rgba(5, 27, 155, 0.8) !important">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactPage" class="nav-link" onclick="changePage(event)" >Contato</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+        <section class="content" style="padding: 1%;">
+            <div class="container-fluid spaceBetweenSections">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">
+                            Sobre nossas palestras!
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 aboutUs ">
+                    <p style="margin-top: 5%;">
+                        Temos como missão transmitir conhecimentos legítimos e filtrados através do processo de <i>fact checking</i>/checagem de fatos e consultas à cientistas.
+                        Assim podemos fornecer os melhores dados disponíveis e com respaldo respaldo científico, trazendo assim novidades e cada vez mais novos processos do que
+                        podemos fazer pelo nosso planeta.
+                    </p>
+                    <p>
+                        Temos nossas palestras, onde reunimos materiais cientificos, cientistas e dados reais para dar credibilidade e uma melhor experiência sobre o assunto.
+                        Nossas palestras ainda conta com um bate papo entre os especialistas e o público, sendo aberto a todo tipo de pergunta. Todas as perguntas são bem vindas
+                        e serão levadas a sério, para que todas as dúvidas sejam sanadas e para que pensemos juntos em novas soluções para contribuirmos com um planeta mais sustentável,
+                        mais saudável e, sem dúvidas, mais consciente sobre nossas tarefas com o meio ambiente.
+                    </p>
+                    <!-- <p>
+                        No final da página você encontrará um formulário, entre em contato e para que possamos agendar uma data para palestrar na sua empresa, escola, faculdade etc.
+                        Estamos ansiosos para ajudar vocês sobre o tema!
+                    </p> -->
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 aboutUsImg" style="justify-content: center;" >
+                        <img src="../images/palestra_ilustracao.jpg" alt="Palestra com público" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">
+                            Sobre nossos webinars!
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 aboutUsImg" style="justify-content: center; " >
+                        <img src="../images/webinar.png" alt="Palestra com público" class="img-fluid">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 aboutUs ">
+                        <p style="margin-top: 5%;">
+                        Prefere palestras online ao invés de presenciais? Não há problemas! Oferecemos os mesmos conteudos disponíveis que os presenciais através dos nossos <b>webinars</b>/Seminários online.
+                        Onde oferecemos a mesma qualidade de conteúdos disponíveis no presencial, também contamos com especialistas a disposição para responder as dúvidas, fornecer informações cientificas
+                        acessíveis e com o benefício de poder ser do conforto da sua casa! 
+                        </p>
+                        <p>
+                            Nossos webinars são pensados para ser uma maneira mais confortável e bem interativa com o nosso público. A interação faz parte de um processo de aprendizado mais
+                            eficaz e a transmissão do conhecimento não só por nós, mas entre o nosso público em sí. Todo esse conhecimento é importante demais para ficar só com a gente, não é mesmo? Por
+                            isso temos nossa missão de fazer parte do processo de mudanças benéficas para nosso mundo, sendo essa missão sendo feita através do meio presencial ou técnológico.
+                        </p>
+                        <p>
+                            Entre em contato e para que possamos agendar uma data para palestrar na sua empresa, escola, faculdade etc.
+                            Estamos ansiosos para ajudar vocês sobre o tema!
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header text-center" style="color: rgb(19, 81, 18);">
+                            <b>Agende com a gente!</b> 
+                        </div>
+                        <div class="card-body" >
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputName">Name</label>
+                                        <input type="text" class="form-control" name="name" placeholder="Name" id="inputName">
+                                    </div>
+                
+                
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCompany">Empresa/Instituição</label>
+                                        <input type="text" class="form-control" name="company" placeholder="Nome da empresa/instituição" id="inputCompany">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control" name="email" placeholder="Email" id="inputEmail">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputNumber">Telefone</label>
+                                        <input type="text" class="form-control" name="phone" placeholder="Phone" id="inputNumber">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputMessage">Mensagem</label>
+                                    <textarea class="form-control" rows="5" id="inputMessage" placeholder="Deixe sua mensagem e entraremos em contato logo!"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success" onclick="submitASK(event)">Enviar</button>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white-50">
+            <div class="container text-left">
+              <small>Copyright &copy; WarmGreen</small>
+            </div>
+        </footer>
+    </body>
+</html>

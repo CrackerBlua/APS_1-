@@ -27,14 +27,9 @@ body {
     border: 3px solid rgb(159, 198, 158);
 }
 
-header {
-    height: 360px;
-    z-index: 10;
-}
-
 .header-banner {
     background-color: #333;
-    background-image: url('/images/world_hand_space.jpg');
+    background-image: url('../images/world_hand_space.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,105 +37,61 @@ header {
     height: 300px;
 }
 
-header h1 {
-    /* background-color: rgba(18,72,120, 0.8); */
-    color: #fff;
-    padding: 0 1rem;
-    position: absolute;
-    top: 2rem; 
-    left: 2rem;
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-}
-
-div.fixed-header > ion-icon {
-    margin-left: 22px;
-}
-
-nav {
-    width: 100%;
-    height: 60px;
-    background: rgb(9, 114, 7);
-    position: relative;
+header {
+    height: 360px;
     z-index: 10;
 }
 
-nav div {
-    color: white;
-    font-size: 1.5rem;
-    line-height: 60px;
-    position: absolute;
-    top: 0;
-    left: 2%;
+.row {
+    padding: 1%;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
 }
 
-.visible-title {
-    visibility: visible;
+.navbar-light .navbar-brand {
+    color: #fff !important;
+    font-size: 1.50rem;
+    margin-left: 1.25rem;
 }
 
-nav ul { 
-    list-style-type: none;
-    margin: 0 0 auto 0;
-    padding-left: 0;
-    text-align: center;
-    max-width: 100%;
-}
-nav ul li { 
-    display: inline-block; 
-    line-height: 60px;
-    margin-left: 50px;
-}
-nav ul li a {
-    text-decoration: none; 
-    color: rgb(255, 255, 255);
-    cursor: pointer !important;
+nav {
+    background-color: rgb(9, 114, 7) !important;
+    z-index: 10;
 }
 
-nav ul li a:hover {
+.navbar-brand {
+    color: white !important;
+    font-size: 1.25rem;
+}
+
+nav div#navbarNav > ul > li {
+    padding-left: 1.5rem;
+}
+
+nav div#navbarNav > ul > li > a {
+    color: white !important;
+    font-size: 1.25rem;
+}
+
+nav div#navbarNav > ul > li > a:hover {
     text-decoration: underline; 
-    color: rgba(5, 27, 155, 0.8) ;
+    color: rgba(5, 27, 155, 0.8) !important;
     cursor: pointer;
+    font-size: 1.25rem;
 }
 
-ion-icon {
-    visibility: visible;
+#sticky-footer{
+    background-color: rgb(9, 114, 7) !important;
+    color: #fff !important;
 }
 
-ion-icon#burguer {
-    margin-right: 10px;
+div.aboutUs > h2 {
+    text-align: center;
+    margin-top: 1rem;
 }
 
-div#divNavigator {
-    font-size: 40px;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-div#burguerMenu {
-    font-size: 60px;
-    margin-top: 0px;
-    position: absolute;
-    float:left;
-    padding-right: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-ul.nav-list > li {
-    font-size: 20px;
-}
-
-div.content {
-    width: 50%;
-    background-color: black;
-    margin-left: 2%;
+div.aboutUs > p {
+    text-indent: 1.5em;
 }
 
 .display-loading-div {
@@ -149,6 +100,30 @@ div.content {
 
 .display-hide {
     display: none;
+}
+
+.display-loading-div {
+    display: none;
+}
+
+.display-hide {
+    display: none;
+}
+
+.spaceBetweenSections {
+    margin-top: 1rem;
+}
+
+.card-header {
+    background-color: rgb(159, 198, 158) !important;
+}
+
+.card-body  {
+    background-color: rgba(159, 198, 158, 0.2) !important
+}
+
+.card {
+    min-width: 80% !important;
 }
 
 /* códigos para dar um overlay sobre a tela */
@@ -183,7 +158,7 @@ div#loader {
 .circle-core {
     width: 100%;
     height: 100%;
-    background: url('/images/planeta_grande_sem_fundo.png'); /*rgba(159, 198, 158, 0.9)*/
+    background: url('../images/planeta_grande_sem_fundo.png'); /*rgba(159, 198, 158, 0.9)*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,11 +185,6 @@ div#loader p {
 }
 
 @media only screen and (max-width: 650px) {
-    nav ul li { 
-        display: inline-block; 
-        line-height: 60px;
-        /* margin-left: 25px; */
-    }
 
     .circle-border {
         width: 150px;
@@ -244,11 +214,6 @@ div#loader p {
 }
 
 @media only screen and (max-width: 500) {
-    nav ul li { 
-        display: inline-block; 
-        line-height: 60px;
-        margin-left: 25px;
-    }
 
     .circle-border {
         width: 150px;
@@ -304,26 +269,3 @@ div#loader p {
         letter-spacing: 0.15em;
   }
 }
-
-div#divNavigator {
-
-}
-
-/* @media only screen and (max-width: 960px) {
-    .content{ 
-        padding: 2rem 0;
-    }
-    article {
-        float: none;
-        margin: 0 auto;
-        width: 96%;
-    }
-    article:last-of-type {  
-        margin-bottom: 3rem;
-    }
-    aside {  
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-} */
