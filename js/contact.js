@@ -33,9 +33,9 @@ function submitASK(event) {
     const promiseTimer = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(
-                alert('Recebemos seu feedback! Obrigado pelo seu apoio!')
+                alert('Recebemos seu agendamento! Obrigado!')
             );
-          }, 500);
+          }, 1000);
     }) 
     promiseTimer
     .then(() => {

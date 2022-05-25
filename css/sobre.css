@@ -101,6 +101,28 @@ nav div#navbarNav > ul > li > a:hover {
     display: none;
 }
 
+.spaceBetweenSections {
+    margin-top: 1rem;
+}
+
+.card-header {
+    background-color: rgb(159, 198, 158) !important;
+}
+
+.card-body  {
+    background-color: rgba(159, 198, 158, 0.2) !important
+}
+
+div.aboutUsImg > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.aboutUs > p {
+    text-indent: 1.5em;
+}
+
 /* códigos para dar um overlay sobre a tela */
 div#loader {
     position: fixed;

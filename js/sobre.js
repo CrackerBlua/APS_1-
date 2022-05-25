@@ -25,3 +25,20 @@ function changePage(event) {
             break;
     }
 }
+
+function submitASK(event) {
+    let divLoader = document.getElementById('loader');
+    divLoader.removeAttribute('class', 'display-loading-div');
+
+    const promiseTimer = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(
+                alert('Recebemos seu feedback! Obrigado pelo seu apoio!')
+            );
+          }, 5000);
+    }) 
+    promiseTimer
+    .then(() => {
+    })
+
+}

@@ -122,6 +122,10 @@ div.aboutUs > p {
     background-color: rgba(159, 198, 158, 0.2) !important
 }
 
+.card {
+    min-width: 80% !important;
+}
+
 /* códigos para dar um overlay sobre a tela */
 div#loader {
     position: fixed;
