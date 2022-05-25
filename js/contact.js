@@ -1,18 +1,3 @@
-const getDeviceType = () => {
-    const ua = navigator.userAgent;
-    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-      return "tablet";
-    }
-    if (
-      /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-        ua
-      )
-    ) {
-      return "mobile";
-    }
-    return "desktop";
-};  
-
 function changePage(event) {
     let pageReference = event.target.id;
     let divLoader = document.getElementById('loader');
@@ -41,4 +26,19 @@ function changePage(event) {
     }
 }
 
+function submitASK(event) {
+    let divLoader = document.getElementById('loader');
+    divLoader.removeAttribute('class', 'display-loading-div');
 
+    const promiseTimer = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(
+                alert('Recebemos seu feedback! Obrigado pelo seu apoio!')
+            );
+          }, 500);
+    }) 
+    promiseTimer
+    .then(() => {
+    })
+
+}

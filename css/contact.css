@@ -27,11 +27,6 @@ body {
     border: 3px solid rgb(159, 198, 158);
 }
 
-header {
-    height: 360px;
-    z-index: 10;
-}
-
 .header-banner {
     background-color: #333;
     background-image: url('../images/world_hand_space.jpg');
@@ -42,6 +37,10 @@ header {
     height: 300px;
 }
 
+header {
+    height: 360px;
+    z-index: 10;
+}
 
 .row {
     padding: 1%;
@@ -81,18 +80,9 @@ nav div#navbarNav > ul > li > a:hover {
     font-size: 1.25rem;
 }
 
-.spaceBetweenSections {
-    margin-top: 1rem;
-}
-
-p.textCenter {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-div.container-fluid {
-    padding: 1%;
+#sticky-footer{
+    background-color: rgb(9, 114, 7) !important;
+    color: #fff !important;
 }
 
 div.aboutUs > h2 {
@@ -100,32 +90,9 @@ div.aboutUs > h2 {
     margin-top: 1rem;
 }
 
-.carousel-item{
-    min-height: 280px !important;
-}
-
-.imageOpc {
-    opacity: 0.7;
-}
-
-#sticky-footer{
-    background-color: rgb(9, 114, 7) !important;
-    color: #fff !important;
-}
-
-div.aboutUsImg > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 div.aboutUs > p {
     text-indent: 1.5em;
 }
-
-/* div.sideBorderGray {
-    border-right: 1px solid rgb(215, 207, 207);
-} */
 
 .display-loading-div {
     display: none;
@@ -133,6 +100,26 @@ div.aboutUs > p {
 
 .display-hide {
     display: none;
+}
+
+.display-loading-div {
+    display: none;
+}
+
+.display-hide {
+    display: none;
+}
+
+.spaceBetweenSections {
+    margin-top: 1rem;
+}
+
+.card-header {
+    background-color: rgb(159, 198, 158) !important;
+}
+
+.card-body  {
+    background-color: rgba(159, 198, 158, 0.2) !important
 }
 
 /* códigos para dar um overlay sobre a tela */
@@ -278,23 +265,3 @@ div#loader p {
         letter-spacing: 0.15em;
   }
 }
-
-
-/* @media only screen and (max-width: 960px) {
-    .content{ 
-        padding: 2rem 0;
-    }
-    article {
-        float: none;
-        margin: 0 auto;
-        width: 96%;
-    }
-    article:last-of-type {  
-        margin-bottom: 3rem;
-    }
-    aside {  
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-} */
